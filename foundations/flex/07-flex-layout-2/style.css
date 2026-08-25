@@ -8,22 +8,83 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-weight: 900;
+  font-size: 32px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
+  flex-shrink: 0;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  gap: 8px;
+  padding: 48px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 400px;
+  padding: 13px;
+  flex-shrink: 1;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+a{
+  text-decoration: none;
+  color: #eee;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 16px;
+  
+}
+
+.content {
+  flex: 2;
+  display: flex;
+  gap: 32px;
+}
+
+.footer {
+  justify-self: flex-end;
+  text-align: center;
 }
